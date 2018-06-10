@@ -1,7 +1,7 @@
 
 
 object CourseFee {
-  def courseMatch(input:String):String = {
+  def courseMatch(input:String):String = {//course matching function
     input match{
       case "Android" => "12999"
       case "Big Data Development" => "17999"
@@ -14,7 +14,7 @@ object CourseFee {
     println("Available course Android , Big Data Development and Spark")
     println("Enter course name to check fees")
     
-    var course = scala.io.StdIn.readLine()
+    var course = scala.io.StdIn.readLine()//for string input
     println("fee is "+courseMatch(course))
   }
 }
